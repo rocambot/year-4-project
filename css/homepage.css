@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap');
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.video-title{
+	position:fixed;
+	top:250px;
+	width:100%;
+	padding:20px;
+	text-align: center;
+}
+
+.video-title h1{
+	font-family: 'Rubik Wet Paint', cursive;
+	color:#ffffff;
+	font-size:10em;
+}
+
+.pause-play{
+	position:fixed;
+	bottom:0;
+	width:50%;
+	padding:10px;
+}
+
+.content{
+	position:fixed;
+	top:0;
+	width:100%;
+	padding:5px;
+	text-align:right;
+	
+}
+
+.content a{
+	color:#fff;
+	font-size:3em;
+	font-family: 'Noto Sans JP', sans-serif;
+	text-decoration: none;
+	}
+
+.content a:hover{
+	text-decoration: underline;
+		font-weight:bold;
+}
+
+#Button{
+	font-size:45px;
+	border:none;
+	background-color: #fff;
+	cursor:pointer;
+}
+
+#Button:hover{
+	background-color:#ddd;
+}
+
+@media (min-aspect-ratio: 16/9){
+	#video{
+		width:100%;
+		height:auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#video{
+		width:auto;
+		height:100%;
+	}
+}
+
+@media (max-width:757px){
+#video{
+	display:none;
+	
+}
+	body{
+background:url("../images/275908641_561507448371771_6410575165854129063_n.jpg");
+		background-size:cover;
+	}
+
